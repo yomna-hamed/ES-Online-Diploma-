@@ -4,13 +4,10 @@
 int main()
 {
     char a[30];
-    int i=0,counter;
+    int i;
     printf("Enter a string: ");
     gets(a);
-    while(a[i]!=0) {
-        counter++;
-        i++;
-    }
-    printf("length of string: %d",counter);
+    for(i=0;a[i]!=0;i++);
+    printf("length of string: %d",i);
     return 0;
 }
