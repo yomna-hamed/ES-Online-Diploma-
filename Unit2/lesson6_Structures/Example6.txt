@@ -1,0 +1,4 @@
+Output of the program :
+
+size of union=32       //size of largest element(char name[32]) as it is shared memory.
+size of structure=40  //32+4+4 (ignoring pagging and packing concept).
