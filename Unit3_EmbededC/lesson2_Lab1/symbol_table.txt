@@ -1,0 +1,15 @@
+//symbol table for final executable file 
+00010070 T main
+00010000 T reset
+00010088 D sentence
+000110ec D stack_top
+00010008 t stop
+00010010 T UART_RECIEVE
+
+//symbol table for uart.o (Realocatble image) 
+00000000 T UART_RECIEVE
+
+//symbol table for app.o (Realocatble image) 
+00000000 T main
+00000000 D sentence
+         U UART_RECIEVE       //U for unresolved(before linking)
