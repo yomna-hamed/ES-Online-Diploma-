@@ -1,0 +1,23 @@
+//Symbols of main.o
+00000004 D G_variables
+00000000 T main
+00000000 D output_ODR
+00000004 C Unintialized_Global
+
+
+//Symbols of startup1.o
+00000000 t _reset
+         U main
+00000006 t vector_handler
+
+
+//Symbols of learn_in_depth_cortex_m3.elf
+080000cc t _reset
+080000d8 D G_variables
+0800004c T main
+080000d4 D output_ODR
+20000000 B Unintialized_Global
+080000d2 t vector_handler
+
+
+
