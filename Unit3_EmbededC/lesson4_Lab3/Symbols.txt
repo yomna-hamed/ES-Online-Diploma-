@@ -1,0 +1,32 @@
+$ arm-none-eabi-nm.exe main.o
+00000000 T main
+
+
+$ arm-none-eabi-nm.exe startup.o
+00000000 T Default_Handler
+         U E_bss
+         U E_data
+         U E_text
+00000000 R g_p_fun_vectors
+00000000 W HardFault_Handler
+         U main
+00000000 W NMI_Handler
+0000000c T Reset_Handler
+         U S_bss
+         U S_data
+00000000 b Stack_Top
+
+
+$ arm-none-eabi-nm.exe learn_in_depth_cortex_m4.elf
+0000009c T Default_Handler
+20000424 B E_bss
+20000000 D E_data
+00000134 T E_text
+00000000 T g_p_fun_vectors
+0000009c W HardFault_Handler
+00000010 T main
+0000009c W NMI_Handler
+000000a8 T Reset_Handler
+20000000 B S_bss
+20000000 D S_data
+20000000 b Stack_Top
